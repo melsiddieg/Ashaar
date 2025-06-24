@@ -4,7 +4,8 @@ gradio
 tnkeeh
 pyarabic
 termcolor
-tensorflow==2.12.0
+tensorflow==2.12.0; platform_system!='Darwin'
+tensorflow-macos==2.12.0; platform_system=='Darwin'
 matplotlib==3.3.3
 gdown==4.6.0
 scikit-learn
