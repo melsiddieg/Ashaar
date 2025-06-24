@@ -10,7 +10,7 @@ with open('README.md') as readme_file:
 setup(name='Ashaar',
       version='0.0.2',
       url='https://github.com/ARBML/Ashaar',
-      discription="Arabic poetry analysis and generation library",
+      description="Arabic poetry analysis and generation library",
       long_description=readme,
       long_description_content_type='text/markdown',
       author_email='arabicmachinelearning@gmail.com',
