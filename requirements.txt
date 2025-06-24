@@ -8,6 +8,7 @@ tensorflow==2.12.0
 matplotlib==3.3.3
 gdown==4.6.0
 scikit-learn
+pandas
 torch >= 1.3
 datasets >= 2.12.0
 accelerate >= 0.12.0
