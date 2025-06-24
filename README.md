@@ -16,6 +16,10 @@ Arabic poetry analysis and generation.
 pip install .
 ```
 
+The `requirements.txt` file selects the correct TensorFlow package for your
+platform. On Linux and Windows it installs `tensorflow`, while on macOS it
+installs `tensorflow-macos`.
+
 ## Generation 
 
 ### Training 
