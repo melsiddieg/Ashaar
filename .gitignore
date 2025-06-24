@@ -7,3 +7,6 @@ flagged/*
 .ipynb_checkpoints/*
 *__MACOSX
 *.pyc
+build/
+dist/
+*.egg-info/

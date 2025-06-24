@@ -4,10 +4,10 @@ gradio
 tnkeeh
 pyarabic
 termcolor
-tensorflow==2.12.0
 matplotlib==3.3.3
 gdown==4.6.0
 scikit-learn
+pandas
 torch>=1.3
 datasets>=2.12.0
 accelerate>=0.12.0
@@ -19,3 +19,9 @@ tkseem@ git+https://github.com/ARBML/tkseem.git
 bohour@ git+https://github.com/MagedSaeed/Bohour.git
 transformers@ git+https://github.com/huggingface/transformers.git
 poetry_diacritizer@ git+https://github.com/zaidalyafeai/Arabic_Diacritization.git
+
+[:platform_system != "Darwin"]
+tensorflow==2.12.0
+
+[:platform_system == "Darwin"]
+tensorflow-macos==2.12.0

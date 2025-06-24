@@ -1,13 +1,49 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: Ashaar
-Version: 0.0.1
+Version: 0.0.2
+Summary: Arabic poetry analysis and generation library
 Home-page: https://github.com/ARBML/Ashaar
 Author-email: arabicmachinelearning@gmail.com
 License: MIT
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
+Requires-Dist: protobuf
+Requires-Dist: evaluate
+Requires-Dist: gradio
+Requires-Dist: tnkeeh
+Requires-Dist: pyarabic
+Requires-Dist: termcolor
+Requires-Dist: tensorflow==2.12.0; platform_system != "Darwin"
+Requires-Dist: tensorflow-macos==2.12.0; platform_system == "Darwin"
+Requires-Dist: matplotlib==3.3.3
+Requires-Dist: gdown==4.6.0
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: torch>=1.3
+Requires-Dist: datasets>=2.12.0
+Requires-Dist: accelerate>=0.12.0
+Requires-Dist: sentence-transformers
+Requires-Dist: ruamel.yaml==0.16.12
+Requires-Dist: sentencepiece!=0.1.92
+Requires-Dist: diacritization-evaluation==0.5
+Requires-Dist: tkseem@ git+https://github.com/ARBML/tkseem.git
+Requires-Dist: bohour@ git+https://github.com/MagedSaeed/Bohour.git
+Requires-Dist: transformers@ git+https://github.com/huggingface/transformers.git
+Requires-Dist: poetry_diacritizer@ git+https://github.com/zaidalyafeai/Arabic_Diacritization.git
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 ## Ashaar
+
+[![Huggingface Space](https://img.shields.io/badge/🤗-Demo%20-yellow.svg)](https://huggingface.co/spaces/arbml/Ashaar)
+[![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Z6c0ogy8Yt89UJgT_fAvb0xdKwfBYxK_?usp=sharing)
+[![GitHub](https://img.shields.io/badge/💻-GitHub%20-black.svg)](https://github.com/ARBML/Ashaar)
 
 Arabic poetry analysis and generation. 
 
@@ -15,13 +51,15 @@ Arabic poetry analysis and generation.
 <img src='https://raw.githubusercontent.com/ARBML/Ashaar/master/images/ashaar_icon.png' width='150px' alt='logo for Ashaar'/>
 </p>
 
-## Demo 
-
-Start the demo using the following command
+## Installation
 
 ```
-gradio app.py
+pip install .
 ```
+
+The `requirements.txt` file selects the correct TensorFlow package for your
+platform. On Linux and Windows it installs `tensorflow`, while on macOS it
+installs `tensorflow-macos`.
 
 ## Generation 
 
@@ -99,3 +137,12 @@ Sample output
  'theme': ['قصيدة رومنسيه', 'قصيدة شوق', 'قصيدة غزل']}
 ```
 
+## Citation 
+```
+@article{alyafeai2023ashaar,
+  title={Ashaar: Automatic Analysis and Generation of Arabic Poetry Using Deep Learning Approaches},
+  author={Alyafeai, Zaid and Al-Shaibani, Maged S and Ahmed, Moataz},
+  journal={arXiv preprint arXiv:2307.06218},
+  year={2023}
+}
+```

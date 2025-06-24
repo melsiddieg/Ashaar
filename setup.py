@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('requirements.txt') as f:
     required = f.read().splitlines()
@@ -15,7 +15,7 @@ setup(name='Ashaar',
       long_description_content_type='text/markdown',
       author_email='arabicmachinelearning@gmail.com',
       license='MIT',
-      packages=['Ashaar'],
+      packages=find_packages(),
       install_requires=required,
       python_requires=">=3.9",
       include_package_data=True,
